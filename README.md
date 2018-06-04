@@ -1,4 +1,4 @@
-# public-holydays
+# Hari-Kerja
 Yii2 helper untuk membantu menghitung hari kerja dengan cara mengurangi rentang hari dengan hari libur nasional dan weekend(sabtu dan minggu).
 
 ###Untuk menggunakannya
