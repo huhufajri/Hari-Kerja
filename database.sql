@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 04, 2018 at 10:41 AM
+-- Generation Time: Jun 04, 2018 at 11:12 AM
 -- Server version: 5.6.39
 -- PHP Version: 5.6.30
 
@@ -13,26 +13,26 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 --
--- Database: `public_holydays`
+-- Database: `hari_libur`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_holydays`
+-- Table structure for table `hari_libur`
 --
 
-CREATE TABLE `public_holydays` (
+CREATE TABLE `hari_libur` (
   `id` int(11) NOT NULL,
-  `date` date NOT NULL,
-  `description` text NOT NULL
+  `tanggal` date NOT NULL,
+  `keterangan` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `public_holydays`
+-- Dumping data for table `hari_libur`
 --
 
-INSERT INTO `hari_libur` (`id`, `date`, `description`) VALUES
+INSERT INTO `hari_libur` (`id`, `tanggal`, `keterangan`) VALUES
 (1, '2017-01-01', ''),
 (2, '2017-01-02', ''),
 (3, '2017-03-28', ''),
@@ -81,9 +81,9 @@ INSERT INTO `hari_libur` (`id`, `date`, `description`) VALUES
 --
 
 --
--- Indexes for table `public_holydays`
+-- Indexes for table `hari_libur`
 --
-ALTER TABLE `public_holydays`
+ALTER TABLE `hari_libur`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -91,8 +91,8 @@ ALTER TABLE `public_holydays`
 --
 
 --
--- AUTO_INCREMENT for table `public_holydays`
+-- AUTO_INCREMENT for table `hari_libur`
 --
-ALTER TABLE `public_holydays`
+ALTER TABLE `hari_libur`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 COMMIT;
