@@ -21,7 +21,9 @@ Class PublicHolydaysHelper {
 				$hariKerja = $start->format('w'); 
 			
 				if($hariKerja != 0 && $hariKerja != 6){ // 0 untuk minggu and 6 untuk sabtu berlaku untuk 5 hari kerja
-					$jumlah++;  
+					 if(!in_array($start->format('Y-m-d'), $liburNasional)) {
+						++$jumlah;
+					    }  
 				}
 			}
 			return $jumlah-1; //hari tidak libur
